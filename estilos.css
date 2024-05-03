@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 10px solid red;
+  width: 100%;
+  height: 100%;
+
+  min-width: 450px; /*Es lo maximo a lo que se puede achicar el proyecto*/
+
+
+}
+
+/*######################Header*/
+.Navegacion {
+  /*border: 5px solid rgb(119, 18, 18);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  /*border: 5px solid rgb(184, 159, 227);*/
+  width: 100%;
+  /*height: 5em;*/
+  /*Esto hace que el despliegue del menu hamburguesa no funcione bien*/
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 0.5em;
+
+  background-color: gray;
+  
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  
+}
+
+#LogoSpot {
+  /*border: 5px solid green;*/
+  width: 10em;
+  height: 3em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Logo {
+  /*border: 5px solid pink;*/
+
+  width: 4em;
+  height: 1.5em;
+}
+
+.navbar ul {
+  /*border: 5px solid orange;*/
+  width: 100%;
+
+  display: flex;
+  justify-content: right;
+}
+
+.nav-link:hover {
+  color: #98ca3c;
+  font-weight: bold;
+}
+
+/*Menu Hamburguesa*/
+.navbar-toggler-icon {
+  /*border: 5px solid green;*/
+  width: 20px;
+}
+
+/*Menu ya comprimido, cuando se expande*/
+.navbar-collapse {
+  /*border: 1px solid green;*/
+  padding-left: 10px;
+}
+
+
+/*######################Carrusel*/
+
+main .carousel-inner img{
+  max-height: 50vh; /*Indica que la imagen tendra el 50vh de la pantalla*/
+  object-fit: cover; /*Indica que la imagen se ajustara para no verse distorcionada*/
+  filter: grayscale(70%);
+}
+
+#Carrusel{
+  /*border: 5px solid rgb(193, 75, 189);*/
+  position: relative;
+  margin-top: 50px;
+
+}
+.CarruselFondo{
+  /*border: 5px solid gold;*/
+
+  position: absolute; /*Para que este div se expanda por el alto y ancho de su contenedor*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0,0,0, 0.5);
+  color: white;
+}
+
+.CarruselTexto{
+  /*border: 5px solid white;*/
+
+  width: 100%;
+  height: 100%;
+
+  padding: 30px;
+}
+
+.CarruselTexto .row{
+  /*border: 5px solid white;*/
+  height: 100%;
+}
+
+/*######################Carrusel Botones*/
+
+.Btn-Platzi{
+  background-color: #98ca3c;
+  color: white;
+}
+
+.Btn-Platzi:hover{
+  background-color: #809d4b;
+  color: white;
+}
+
+/*######################Oradores*/
+#Oradores{
+  /*border: 2px solid black;*/
+  padding: 20px;
+}
+
+
+
+/*######################Lugar y Fecha*/
+
+.row #Honolulu{
+  width: 100%;
+  height: 300px;
+  padding-left: 0;
+  object-fit: cover;
+}
+
+#LugarInfo{
+  background-color: gray;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*######################Footer*/
+
+footer {
+  background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+  /*border: 5px solid yellow;*/
+}
+
+footer .col-12 {
+  /*border: 2px solid gray;*/
+
+  text-align: center;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #98ca3c;
+}
